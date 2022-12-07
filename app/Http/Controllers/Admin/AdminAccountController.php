@@ -41,39 +41,6 @@ class AdminAccountController extends Controller
         return view('admin.info_user')->with(['user'=>$user,'totalFriend'=>$totalFriend,'totalPost'=>$totalPost,'totalFriend'=>$totalFriend,'totalLike'=>$totalLike]);
     }
 
-<<<<<<< HEAD
-    public function adminAccountAdmin(){
-        $lstAccountAdmin = User::Where('isAdmin',1)->get();
-        // dd($lstAccountAdmin);
-        return view('admin.account_admin')->with(['lstAccountAdmin'=>$lstAccountAdmin]);
-    }
-
-    public function formCreateAccount(){
-        return view('admin.form_create_account');
-    }
-
-    public function adminAddAccountAdmin(Request $request){
-        $data = $request->all();
-        $accountAdmin = new User();
-        $accountAdmin->first_name = $data['first_name'];
-        $accountAdmin->last_name = $data['last_name'];
-        $accountAdmin->email = $data['email'];
-        $accountAdmin->isAdmin = 0;
-        $accountAdmin->isSubAdmin = 1;
-        if($data['password'] == $data['confirm_password']){
-            $accountAdmin->password = Hash::make($data['password']);
-        }
-        else{
-            return redirect()->back()->withErrors(['error'=>'Mật khẩu không khớp']);
-        }
-        $accountAdmin->birth_date = $data['birth_date'];
-        $accountAdmin->avatar = 'no_avatar.png';
-        $accountAdmin->created_at = Carbon::now('Asia/Ho_Chi_Minh');
-        $accountAdmin->status = 1;
-        $accountAdmin->save();
-        return redirect()->back();
-        
-=======
     public function getAccountUser( Request $request){
         //phân trang
         $page = $request->page;
@@ -94,6 +61,5 @@ class AdminAccountController extends Controller
                                         'totalAccountUnActive'=>$totalAccountUnActive,
                                        'totalAccountBlock'=>$totalAccountBlock,]);
 
->>>>>>> Kiet-dangnhap
     }
 }

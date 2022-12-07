@@ -179,15 +179,8 @@ Route::post('ckcsocialnetwork/admin/login/request',[AdminLoginController::class,
 Route::get('ckcsocialnetwork/admin/logout',[AdminLoginController::class,'logoutAdmin'])->name('logoutAdmin');
 Route::get('/ckcsocialnetwork/admin', [AdminDashboardController::class,'adminDashboard'])->name('adminDashboard');
 
-<<<<<<< HEAD
-//* account admin
-route::get('ckcsocialnetwork/admin/account',[AdminAccountController::class,'adminAccountAdmin'])->name('accountAdmin');
-route::get('ckcsocialnetwork/admin/account/createaccount',[AdminAccountController::class,'formCreateAccount'])->name('adminCreateAccount');
-route::post('ckcsocialnetwork/admin/account/addAccountAdmin',[AdminAccountController::class,'adminAddAccountAdmin'])->name('adminAddAccountAdmin');
-=======
 
 
->>>>>>> Kiet-dangnhap
 //post admin
 route::get('ckcsocialnetwork/admin/post',[AdminPostController::class,'adminPost'])->name('adminPost');
 route::get('ckcsocialnetwork/admin/post/detailpost/id={id}',[AdminPostController::class,'adminDetailPost'])->name('adminDetailPost'); 

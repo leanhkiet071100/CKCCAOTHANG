@@ -42,13 +42,6 @@ class AdminPostController extends Controller
     public function adminDetailPost($id){
         $post = Post::Where('id',$id)->First();
         $listMedia = media_file_upload::Where('id_post',$id)->get();
-<<<<<<< HEAD
-        $totalMedia = $listMedia->count();
-       
-
-        
-        return view('admin.detailpost')->with(['totalMedia'=>$totalMedia,'listMedia'=>$listMedia,'post'=>$post]);
-=======
         // dd($id,$listMedia);
         return view('admin.baiviet.detailpost')->with(['listMedia'=>$listMedia,'post'=>$post]);
     }
@@ -81,6 +74,5 @@ class AdminPostController extends Controller
         $totalPost = $lstPost->count();
         return view('admin.baiviet.dsbaiviet')
         ->with(['lstPost' => $lstPost,'totalPost' => $totalPost,'lstPostReporting'=>$lstPostReporting,'lstPostBlock'=>$lstPostBlock]);
->>>>>>> Kiet-dangnhap
     }
 }

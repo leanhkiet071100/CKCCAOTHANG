@@ -123,7 +123,6 @@ class AccountController extends Controller
     // Thay đổi thông tin cá nhân
 
     public function getthaydoithongtincanhan(){
-        
         $id = Auth::user()->id;
         $lstFriend = Friend::Where('id_user_target',$id)->orWhere('id_user_preference',$id)->where('status',1)->get();
         $account = User::Where('id',$id)->first();    

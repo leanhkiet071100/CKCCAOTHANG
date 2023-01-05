@@ -128,15 +128,9 @@
 
                                 <li class="user-profile header-notification">
                                     <a href="#!">
-<<<<<<< HEAD
-                                        <img src="{{ URL('avatar') }}/{{ Auth::user()->avatar }}" style="width:30px;"
-                                            class="img-radius" alt="User-Profile-Image">
-                                        <span>{{Auth::user()->first_name}} {{Auth::user()->last_name}}</span>
-=======
                                         <img src="{{ URL('avatar') }}/{{ Auth::user()->avatar }}"
                                             style="width:30px;" class="img-radius" alt="User-Profile-Image">
                                         <span>{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</span>
->>>>>>> Kiet-dangnhap
                                         <i class="ti-angle-down"></i>
                                     </a>
                                     <ul class="show-notification profile-notification">
@@ -171,38 +165,6 @@
                     <div class="pcoded-wrapper  ">
                         <nav class="pcoded-navbar">
                             <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
-<<<<<<< HEAD
-                            <div class="pcoded-inner-navbar main-menu">
-
-
-                                <ul class="pcoded-item pcoded-left-item">
-                                    <li class="active">
-                                        <a href="{{route('adminDashboard')}}">
-                                            <span class="pcoded-micon"><i class="ti-user"></i><b>D</b></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Tài khoản người
-                                                dùng</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="{{route('accountAdmin')}}">
-                                            <span class="pcoded-micon"><i class="fa fa-key"></i><b>D</b></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Tài khoản admin</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="{{route('adminDashboard')}}">
-                                            <span class="pcoded-micon"><i class="ti-flag-alt"></i><b>D</b></span>
-                                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Báo cáo người
-                                                dùng</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="{{route('adminPost')}}">
-                                            <span class="pcoded-micon"><i class="ti-bookmark"></i><b>D</b></span>
-=======
                             <div class="pcoded-inner-navbar main-menu menuadmin">
                                 <ul class="pcoded-item pcoded-left-item">
                                     <li class="" id="menutaikhoan">
@@ -215,13 +177,10 @@
                                     <li class="" id="menubaiviet">
                                         <a href="{{ route('adminPost') }}">
                                             <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
->>>>>>> Kiet-dangnhap
                                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Bài viết</span>
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
-<<<<<<< HEAD
-=======
                                     <li class="pcoded-hasmenu" id="menutocao">
                                         <a href="javascript:void(0)">
                                             <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
@@ -252,7 +211,6 @@
                                         </ul>
                                     </li>
                                 </ul>
->>>>>>> Kiet-dangnhap
 
 
                             </div>
